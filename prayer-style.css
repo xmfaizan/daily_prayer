@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("images/background.jpg");
+  padding: 10px;
+}
+
+.prayer-app {
+  width: 100%;
+  max-width: 540px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 100px auto 20px;
+  padding: 40px 30px 30px;
+  border-radius: 10px;
+}
+
+.prayer-app h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: black;
+  font-size: xx-large;
+  margin-left: 44px;
+}
+
+.prayer-app h2 img {
+  width: 45px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+ul li {
+  color: rgb(56, 52, 52);
+  display: flex;
+  font-family: sans-serif;
+  list-style: none;
+  font-size: 17px;
+  padding: 15px 10px 15px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("images/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url("images/checked.png");
+}
+
+.buttons {
+  font-family: sans-serif;
+  color: black;
+  margin: auto;
+  font-weight: 700;
+  margin-left: 90px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: large;
+}
+#left-button,
+#right-button {
+  cursor: pointer;
+}
